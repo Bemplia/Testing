@@ -34,7 +34,6 @@ MainSection:NewToggle("Hide interface", "", function(state)
 end)
 
 MainSection:NewToggle("Hide interface", "", function(state)
-    if state then
         while state do
             task.wait(0.3)
             if playergui.Question.QuestionTxt.Text == "Name a type of transport" then
@@ -143,7 +142,6 @@ MainSection:NewToggle("Hide interface", "", function(state)
                 playergui.Answer.LeftBg.textBox.Text = "Turtle"
             end
         end
-    end
 end)
 
 -- Movement
