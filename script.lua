@@ -13,7 +13,7 @@ local Main = Window:NewTab("PlayerGui.Main")
 local Movement = Window:NewTab("Movement")
 local Credits = Window:NewTab("Credits")
 
-local PlayerGui.MainSection = PlayerGui.Main:NewSection("PlayerGui.Main")
+local MainSection = PlayerGui.Main:NewSection("PlayerGui.Main")
 local MovementSection = PlayerGui.Main:NewSection("Movement")
 local CreditsSection = Credits:NewSection("Creator: arbuzik.new")
 
@@ -53,7 +53,7 @@ MainSection:NewButton("Auto Answer", "", function()
                 game.Players.LocalPlayer.PlayerGui.Main.Answer.LeftBg.TextBox.Text = "Murder mystery"
             end
             if game.Players.LocalPlayer.PlayerGui.Main.Question.QuestionTxt.Text == "Name a popular electronic device" then
-                game.Players.LocalPlayer.PlayerGui.Main.Answer.LeftBg.TextBox.Text = "Telephone"
+                game.Players.LocalPlayer.PlayerGui.Main.Answer.LeftBg.TextBox.Text = "Television"
             end
             if game.Players.LocalPlayer.PlayerGui.Main.Question.QuestionTxt.Text == "Name something you do in your sleep" then
                 game.Players.LocalPlayer.PlayerGui.Main.Answer.LeftBg.TextBox.Text = "Dream"
