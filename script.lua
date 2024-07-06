@@ -1,6 +1,6 @@
 -- Variables
 local player = game.Players.LocalPlayer
-local playergui = player.PlayerGui
+local playergui = player.PlayerGui.Main
 local character = player.Character
 local uis = game:GetService("UserInputService")
 local jump = 50
@@ -33,9 +33,8 @@ MainSection:NewToggle("Hide interface", "", function(state)
     end
 end)
 
-MainSection:NewToggle("Hide interface", "", function(state)
-        while state do
-            task.wait(0.3)
+MainSection:NewButton("Auto Answer", "", function()
+        while task.wait(0.3) do
             if playergui.Question.QuestionTxt.Text == "Name a type of transport" then
                 playergui.Answer.LeftBg.textBox.Text = "Airplane"
             end
